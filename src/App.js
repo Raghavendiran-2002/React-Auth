@@ -116,7 +116,7 @@ const App = () => {
       });
   }
   return (
-    <section className="bg-emerald-500 flex items-center justify-center h-screen">
+    <section className="bg-blue-500 flex items-center justify-center h-screen">
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
@@ -127,7 +127,7 @@ const App = () => {
             </h2>
             <button
               onClick={onLogout}
-              className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+              className="bg-blue-800 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
             >
               {loading && <CgSpinner size={20} className="mt-1 animate-spin" />}
               <span>Logout</span>
@@ -136,7 +136,7 @@ const App = () => {
         ) : (
           <div className="w-80 flex flex-col gap-4 rounded-lg p-4">
             <h1 className="text-center leading-normal text-white font-medium text-3xl mb-6">
-              Welcome to <br /> CODE A PROGRAM
+              Welcome to Raay
             </h1>
             {showOTP ? (
               <>
@@ -160,7 +160,7 @@ const App = () => {
                 ></OtpInput>
                 <button
                   onClick={onOTPVerify}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-blue-800 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
@@ -182,7 +182,7 @@ const App = () => {
                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
                 <button
                   onClick={onSignup}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-blue-800 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loading && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
@@ -198,7 +198,7 @@ const App = () => {
 
                 <button
                   onClick={onSignupGoogle}
-                  className="bg-emerald-600 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
+                  className="bg-blue-800 w-full flex gap-1 items-center justify-center py-2.5 text-white rounded"
                 >
                   {loadingG && (
                     <CgSpinner size={20} className="mt-1 animate-spin" />
