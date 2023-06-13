@@ -1,6 +1,4 @@
-FROM node:alpine AS development
-
-ENV NODE_ENV development
+FROM node:19.5.0-alpine
 
 WORKDIR /react-app
 
